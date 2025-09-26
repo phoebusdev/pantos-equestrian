@@ -1,68 +1,51 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
-
-const checkIcon = (
-  <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
-    <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
-  </svg>
-);
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="text-body-color mb-5 flex items-center text-lg font-medium">
-      <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
-
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="py-20 md:py-28 lg:py-32 bg-gray-50/50 dark:bg-gray-dark/50">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Heritage of Equestrian Excellence"
-                paragraph="For over two decades, Pantos Equestrian has been dedicated to fostering the deep bond between horse and rider through expert training, premium facilities, and unwavering commitment to excellence."
-                mb="44px"
-              />
-
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Certified instructors" />
-                    <List text="Premium facilities" />
-                    <List text="All skill levels" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Championship horses" />
-                    <List text="Luxury boarding" />
-                    <List text="Personalized training" />
-                  </div>
+        <div className="flex flex-wrap items-center">
+          <div className="w-full px-4 lg:w-1/2">
+            <div className="mb-12 lg:mb-0 max-w-[570px]">
+              <h2 className="mb-8 text-3xl md:text-4xl lg:text-5xl text-dark dark:text-white" style={{ fontFamily: 'Georgia, serif' }}>
+                Heritage of Equestrian Excellence
+              </h2>
+              <p className="mb-8 text-lg leading-relaxed text-body-color dark:text-body-color-dark" style={{ fontFamily: 'Georgia, serif' }}>
+                For over three decades, Pantos Equestrian has been the cornerstone of luxury equestrian experiences.
+                Our 200-acre estate combines traditional horsemanship with modern training methodologies.
+              </p>
+              <p className="mb-10 text-lg leading-relaxed text-body-color dark:text-body-color-dark" style={{ fontFamily: 'Georgia, serif' }}>
+                From Olympic-level dressage to leisurely trail rides through pristine countryside,
+                we offer an unparalleled environment where both horse and rider can achieve their highest potential.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="text-center">
+                  <h3 className="text-3xl font-light text-primary mb-2" style={{ fontFamily: 'Georgia, serif' }}>200+</h3>
+                  <p className="text-sm text-body-color dark:text-body-color-dark uppercase tracking-wider" style={{ fontFamily: 'Georgia, serif' }}>Acres</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-3xl font-light text-primary mb-2" style={{ fontFamily: 'Georgia, serif' }}>50+</h3>
+                  <p className="text-sm text-body-color dark:text-body-color-dark uppercase tracking-wider" style={{ fontFamily: 'Georgia, serif' }}>Horses</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-3xl font-light text-primary mb-2" style={{ fontFamily: 'Georgia, serif' }}>12</h3>
+                  <p className="text-sm text-body-color dark:text-body-color-dark uppercase tracking-wider" style={{ fontFamily: 'Georgia, serif' }}>Instructors</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-3xl font-light text-primary mb-2" style={{ fontFamily: 'Georgia, serif' }}>30+</h3>
+                  <p className="text-sm text-body-color dark:text-body-color-dark uppercase tracking-wider" style={{ fontFamily: 'Georgia, serif' }}>Years</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                />
+          <div className="w-full px-4 lg:w-1/2">
+            <div className="relative mx-auto max-w-[500px] lg:mr-0">
+              {/* Placeholder for elegant image */}
+              <div className="relative aspect-[4/5] w-full bg-gradient-to-br from-primary/10 to-secondary/10 rounded-sm">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-primary/50 text-lg" style={{ fontFamily: 'Georgia, serif' }}>Estate Image</p>
+                </div>
               </div>
             </div>
           </div>
