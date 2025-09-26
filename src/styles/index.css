@@ -469,6 +469,65 @@
     transition: all 200ms ease;
   }
 
+  /* Luxury Animations */
+  @keyframes luxury-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes luxury-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes luxury-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-luxury-fade {
+    animation: luxury-fade-in 1s ease-out;
+  }
+
+  .animate-luxury-shimmer {
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(196, 171, 159, 0.1),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: luxury-shimmer 3s linear infinite;
+  }
+
+  .animate-luxury-float {
+    animation: luxury-float 4s ease-in-out infinite;
+  }
+
+  /* Premium hover effects */
+  .luxury-hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .luxury-hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(196, 171, 159, 0.15);
+  }
+
+  /* Gradient animation support */
+  .bg-size-200 { background-size: 200% 100%; }
+  .bg-pos-0 { background-position: 0% 50%; }
+  .hover\:bg-pos-100:hover { background-position: 100% 50%; }
+
+  /* Animation delays */
+  .animation-delay-2000 { animation-delay: 2000ms; }
+  .animation-delay-4000 { animation-delay: 4000ms; }
+
   /* Mobile menu improvements */
   @media (max-width: 1024px) {
     .luxury-hero {
