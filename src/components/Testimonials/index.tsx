@@ -39,7 +39,7 @@ const Testimonials = () => {
           {testimonialData.map((testimonial) => (
             <div key={testimonial.id} className="text-center px-6">
               <p className="mb-6 text-lg leading-relaxed text-body-color dark:text-body-color-dark italic" style={{ fontFamily: 'Georgia, serif' }}>
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
               <div>
                 <h4 className="text-lg font-medium text-dark dark:text-white" style={{ fontFamily: 'Georgia, serif' }}>
