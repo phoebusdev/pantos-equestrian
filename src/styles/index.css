@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
-layer(base);
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Great+Vibes|PT+Sans+Narrow:400,700&display=swap') layer(base);
 
 @import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --font-sans: "PT Sans Narrow", sans-serif;
+  --font-script: "Alex Brush", cursive;
+  --font-elegant: "Great Vibes", cursive;
+
   --breakpoint-*: initial;
   --breakpoint-xs: 450px;
   --breakpoint-sm: 575px;
@@ -18,13 +21,16 @@ layer(base);
   --color-transparent: transparent;
   --color-white: #ffffff;
   --color-black: #121723;
-  --color-dark: #1d2430;
-  --color-primary: #4a6cf7;
+  --color-dark: #232323;
+  --color-heading: #232323;
+  --color-primary: #c4ab9f;
+  --color-secondary: #b49383;
+  --color-accent: #ffa07f;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 
-  --color-body-color: #788293;
-  --color-body-color-dark: #959cb1;
+  --color-body-color: #636363;
+  --color-body-color-dark: #a5a5a5;
 
   --color-stroke-stroke: #e3e8ef;
   --color-stroke-dark: #353943;
@@ -124,12 +130,362 @@ layer(base);
 
 @layer base {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #636363;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "PT Sans Narrow", sans-serif;
+    line-height: 1.2;
+    color: #232323;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 18px; }
+  h5 { font-size: 14px; }
+
+  p {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    color: #636363;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p a {
+    display: inline;
+    position: relative;
+    color: inherit;
+    border-bottom: solid 1px #ffa07f;
+    transition: all 200ms ease;
+  }
+
+  p a:hover {
+    color: #FFFFFF;
+    background: #ffa07f;
   }
 }
 
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
+  }
+
+  .luxury-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: solid 2px #c4ab9f;
+    color: #c4ab9f;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background: transparent;
+    transition: all 300ms ease;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .luxury-button:hover {
+    background: #c4ab9f;
+    color: #FFFFFF;
+    border-color: #c4ab9f;
+  }
+
+  .luxury-button-primary {
+    background: #c4ab9f;
+    color: #FFFFFF;
+    border: solid 2px #c4ab9f;
+  }
+
+  .luxury-button-primary:hover {
+    background: #b49383;
+    border-color: #b49383;
+  }
+
+  .luxury-button-accent {
+    border: solid 2px #ffa07f;
+    color: #ffa07f;
+  }
+
+  .luxury-button-accent:hover {
+    background: #ffa07f;
+    color: #FFFFFF;
+    border-color: #ffa07f;
+  }
+
+  /* Header Luxury Styling */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 400ms ease;
+  }
+
+  .header.sticky {
+    background: rgba(0,0,0,0.85);
+  }
+
+  .header .container {
+    height: 149px;
+    transition: all 400ms ease;
+  }
+
+  .header.sticky .container {
+    height: 80px;
+  }
+
+  /* Navigation Luxury Styling */
+  .header nav a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+  }
+
+  .header nav a:hover {
+    color: #b49383;
+  }
+
+  /* Logo Luxury Styling */
+  .header .header-logo {
+    color: #FFFFFF;
+  }
+
+  /* CTA Button Styling in Header */
+  .header .luxury-header-cta {
+    height: 47px;
+    line-height: 43px;
+    padding-left: 25px;
+    padding-right: 20px;
+    text-align: center;
+    border: solid 2px #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: transparent;
+    transition: all 300ms ease;
+  }
+
+  .header .luxury-header-cta:hover {
+    background: #c4ab9f;
+    border-color: #c4ab9f;
+  }
+
+  /* Luxury Layout & Spacing */
+  .luxury-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .luxury-section {
+    padding: 120px 0;
+  }
+
+  .luxury-section-small {
+    padding: 80px 0;
+  }
+
+  .luxury-content-center {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .luxury-content-wide {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .luxury-card {
+    background: #FFFFFF;
+    padding: 40px 30px;
+    box-shadow: 0px 5px 15px rgba(6, 8, 15, 0.05);
+    transition: all 300ms ease;
+    border: 1px solid rgba(196, 171, 159, 0.1);
+  }
+
+  .luxury-card:hover {
+    box-shadow: 0px 10px 30px rgba(6, 8, 15, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .luxury-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 149px;
+  }
+
+  .luxury-spacing-large {
+    margin: 60px 0;
+  }
+
+  .luxury-spacing-medium {
+    margin: 40px 0;
+  }
+
+  .luxury-spacing-small {
+    margin: 20px 0;
+  }
+
+  /* Elegant Typography Classes */
+  .luxury-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 64px;
+    color: #232323;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+
+  .luxury-subtitle {
+    font-family: "Alex Brush", cursive;
+    font-size: 32px;
+    color: #c4ab9f;
+    margin-bottom: 20px;
+  }
+
+  .luxury-text-elegant {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #636363;
+    margin-bottom: 30px;
+  }
+
+  /* Luxury Transitions & Interactions */
+  .trans_200 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
+
+  .trans_300 {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  .trans_400 {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+
+  /* Interactive Element Hover Effects */
+  .luxury-image-hover {
+    transition: all 300ms ease;
+    overflow: hidden;
+  }
+
+  .luxury-image-hover img {
+    transition: all 300ms ease;
+  }
+
+  .luxury-image-hover:hover img {
+    transform: scale(1.05);
+  }
+
+  .luxury-link-elegant {
+    color: #636363;
+    position: relative;
+    transition: all 200ms ease;
+  }
+
+  .luxury-link-elegant:hover {
+    color: #c4ab9f;
+  }
+
+  .luxury-link-elegant::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c4ab9f;
+    transition: width 200ms ease;
+  }
+
+  .luxury-link-elegant:hover::after {
+    width: 100%;
+  }
+
+  /* Form Elements Luxury Styling */
+  .luxury-input {
+    padding: 15px 20px;
+    border: 2px solid rgba(196, 171, 159, 0.2);
+    background: #FFFFFF;
+    color: #636363;
+    font-family: "PT Sans Narrow", sans-serif;
+    transition: all 200ms ease;
+  }
+
+  .luxury-input:focus {
+    border-color: #c4ab9f;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(196, 171, 159, 0.2);
+  }
+
+  /* Global Interactive Enhancement */
+  img {
+    transition: all 300ms ease;
+  }
+
+  button {
+    transition: all 200ms ease;
+  }
+
+  [role="button"]:not(.no-luxury-hover) {
+    transition: all 200ms ease;
+  }
+
+  /* Mobile menu improvements */
+  @media (max-width: 1024px) {
+    .luxury-hero {
+      padding-top: 100px;
+      min-height: 80vh;
+    }
+
+    .luxury-title {
+      font-size: 48px;
+    }
+
+    .luxury-subtitle {
+      font-size: 24px;
+    }
+
+    .luxury-section {
+      padding: 80px 0;
+    }
   }
 }
