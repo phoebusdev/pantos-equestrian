@@ -13,8 +13,8 @@ export default function Video() {
       <section className="relative z-10 py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Experience Our Facilities"
+            paragraph="Take a virtual tour of our world-class equestrian facilities and see why Pantos Equestrian is the premier choice for riders of all levels."
             center
             mb="80px"
           />
@@ -52,8 +52,6 @@ export default function Video() {
           </div>
 
           <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat">
-            {/* <div className="absolute bottom-0 left-0 right-0 z-[-1] "> */}
-            {/* <img src="/images/video/shape.svg" alt="shape" className="w-full" /> */}
           </div>
         </div>
       </section>
@@ -62,7 +60,7 @@ export default function Video() {
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         channel="youtube"
-        videoId="L61p2uyiMSo"
+        videoId="dQw4w9WgXcQ"
       />
     </>
   );

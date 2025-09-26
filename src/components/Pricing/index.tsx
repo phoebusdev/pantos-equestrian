@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Lesson Package Pricing"
+          paragraph="Choose from our flexible lesson packages designed to fit your schedule and budget. All packages include premium facilities and expert instruction."
           center
           width="665px"
         />
@@ -59,43 +59,43 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            packageName="Beginner"
+            price={isMonthly ? "280" : "3000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Perfect for riders just starting their equestrian journey with professional guidance."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="4 Private Lessons per Month" status="active" />
+            <OfferList text="Basic Grooming Instructions" status="active" />
+            <OfferList text="Arena Access" status="active" />
+            <OfferList text="Safety Equipment Provided" status="active" />
+            <OfferList text="Competition Training" status="inactive" />
+            <OfferList text="Trail Riding Access" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            packageName="Intermediate"
+            price={isMonthly ? "450" : "4800"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Ideal for riders looking to advance their skills with specialized training programs."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="6 Lessons per Month" status="active" />
+            <OfferList text="Advanced Riding Techniques" status="active" />
+            <OfferList text="Horse Care Training" status="active" />
+            <OfferList text="Arena & Trail Access" status="active" />
+            <OfferList text="Competition Preparation" status="active" />
+            <OfferList text="Private Horse Access" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            packageName="Elite"
+            price={isMonthly ? "650" : "6500"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Premium training program for serious riders pursuing competitive excellence."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="8 Private Lessons per Month" status="active" />
+            <OfferList text="Competition Training" status="active" />
+            <OfferList text="Unlimited Facility Access" status="active" />
+            <OfferList text="Personal Horse Assignment" status="active" />
+            <OfferList text="Show Coaching" status="active" />
+            <OfferList text="Boarding Discounts" status="active" />
           </PricingBox>
         </div>
       </div>

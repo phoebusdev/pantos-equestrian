@@ -6,8 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Pantos Equestrian - Premier Horse Training Facility",
-  description: "Learn about our rich equestrian heritage, expert trainers, and commitment to excellence in horse training and rider development.",
-  // other metadata
+  description: "Learn about our rich equestrian heritage, expert trainers, and commitment to excellence in horse training and rider development."
 };
 
 const AboutPage = () => {

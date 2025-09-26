@@ -3,44 +3,44 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Essential Horse Care Tips for Winter",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Learn how to keep your equine partner healthy and comfortable during the colder months with expert advice from our veterinary team.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
-      image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      name: "Dr. Sarah Williams",
+      image: "/images/blog/author-01.png",
+      designation: "Veterinarian",
     },
-    tags: ["creative"],
+    tags: ["horse-care"],
     publishDate: "2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Building Confidence in Young Riders",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Discover proven techniques for developing confidence and competence in beginning equestrians through proper instruction and support.",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "Jennifer Martinez",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "Head Instructor",
     },
-    tags: ["computer"],
+    tags: ["training"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Competition Prep: Mental and Physical Training",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Prepare yourself and your horse for competition success with comprehensive training strategies from our experienced coaches.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Michael Thompson",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Competition Coach",
     },
-    tags: ["design"],
+    tags: ["competition"],
     publishDate: "2025",
   },
 ];
