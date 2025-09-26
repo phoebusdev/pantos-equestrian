@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "PT Sans Narrow", sans-serif;
-  --font-script: "Alex Brush", cursive;
-  --font-elegant: "Great Vibes", cursive;
+  --font-sans: Georgia, "Times New Roman", serif;
+  --font-script: Georgia, "Times New Roman", serif;
+  --font-elegant: Georgia, "Times New Roman", serif;
 
   --breakpoint-*: initial;
   --breakpoint-xs: 450px;
@@ -130,30 +130,31 @@
 
 @layer base {
   body {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
     font-weight: 400;
     color: #636363;
     -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "PT Sans Narrow", sans-serif;
-    line-height: 1.2;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.3;
     color: #232323;
     -webkit-font-smoothing: antialiased;
+    font-weight: 500;
   }
 
-  h1 { font-size: 48px; }
-  h2 { font-size: 36px; }
-  h3 { font-size: 24px; }
-  h4 { font-size: 18px; }
-  h5 { font-size: 14px; }
+  h1 { font-size: 56px; font-weight: 400; }
+  h2 { font-size: 40px; font-weight: 400; }
+  h3 { font-size: 28px; }
+  h4 { font-size: 22px; }
+  h5 { font-size: 18px; }
 
   p {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 16px;
-    line-height: 1.875;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.8;
     font-weight: 400;
     color: #636363;
     -webkit-font-smoothing: antialiased;

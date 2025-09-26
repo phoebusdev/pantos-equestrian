@@ -25,11 +25,11 @@ const Hero = () => {
                   Est. 1987 • Luxury Equestrian Estate
                 </p>
 
-                {/* Main heading with luxury typography */}
-                <h1 className="mb-6 text-4xl font-light leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight lg:text-7xl">
-                  <span className="font-normal">Pantos</span>
-                  <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl font-light italic text-primary">
-                    Equestrian Excellence
+                {/* Main heading with luxury typography matching logo */}
+                <h1 className="mb-6 text-5xl leading-tight text-black dark:text-white sm:text-6xl sm:leading-tight md:text-7xl md:leading-tight lg:text-8xl" style={{ fontFamily: 'Georgia, serif' }}>
+                  <span className="font-medium tracking-wide">PANTOS</span>
+                  <span className="block mt-3 text-3xl sm:text-4xl md:text-5xl font-light tracking-[0.25em] text-primary uppercase" style={{ fontFamily: 'Georgia, serif' }}>
+                    Equestrian
                   </span>
                 </h1>
 
