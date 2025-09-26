@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Heritage of Equestrian Excellence"
+                paragraph="For over two decades, Pantos Equestrian has been dedicated to fostering the deep bond between horse and rider through expert training, premium facilities, and unwavering commitment to excellence."
                 mb="44px"
               />
 
@@ -35,15 +35,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Certified instructors" />
+                    <List text="Premium facilities" />
+                    <List text="All skill levels" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Championship horses" />
+                    <List text="Luxury boarding" />
+                    <List text="Personalized training" />
                   </div>
                 </div>
               </div>
