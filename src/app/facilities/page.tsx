@@ -29,7 +29,7 @@ export default function FacilitiesPage() {
                 Indoor Arena Complex
               </h2>
               <p className="mb-6 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Our climate-controlled indoor arena spans 200' x 100' with premium footing, professional lighting, and viewing areas for spectators. Perfect for year-round training regardless of weather conditions.
+                Our climate-controlled indoor arena spans 200&apos; x 100&apos; with premium footing, professional lighting, and viewing areas for spectators. Perfect for year-round training regardless of weather conditions.
               </p>
               <ul className="mb-6 space-y-2 text-body-color dark:text-body-color-dark">
                 <li>• Premium sand and fiber footing</li>
